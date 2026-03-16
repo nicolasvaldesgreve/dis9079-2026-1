@@ -1,4 +1,4 @@
-# ⋆⭒˚.⋆ Título del día ⋆.˚⭒⋆
+# ⋆⭒˚.⋆ Primer día de clases ⋆.˚⭒⋆
 
 Lunes 09 marzo 2026
 
