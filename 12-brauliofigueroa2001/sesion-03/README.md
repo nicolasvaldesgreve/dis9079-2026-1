@@ -31,3 +31,5 @@ lunes 23 de marzo de 2026
 - chompiclub
 
 - descargamos visualstudiocode y la biblioteca oficial de raspberry pico, la que tiene el ticket azul
+
+- tarea, ver el primer capítulo de monty python
