@@ -86,6 +86,56 @@ corrección del error
 
 -  pra la solemne 1 cada arduino haga cosas a distancia a una raspi y esa raspi a computador, eso ya es extremo, es suficiente, las cosas son difíciles
 
-  
-
-  
+  ```cpp
+#include <ArduinoMqttClient.h>
+#include <WiFiS3.h>
+char ssid[] = "dis9079";
+char pass[] = "75288273";
+WiFiClient wifiClient;
+MqttClient mqttClient(wifiClient);
+const char broker[] = "192.168.0.100";
+int port = 1883;
+const char topic[] = "dis9079/equipo/luz";
+void setup() {
+Serial.begin(9600);
+pinMode(LED_BUILTIN, OUTPUT);
+digitalWrite(LED_BUILTIN, LOW);
+Serial.print("Conectando a WiFi...");
+while (WiFi.begin(ssid, pass) != WL_CONNECTED) {
+Serial.print(".");
+delay(1000);
+}
+Serial.println("\nWiFi conectado!");
+mqttClient.setId("CompaneroReceptor");
+mqttClient.setUsernamePassword("dis9079", "dis9079");
+Serial.print("Conectando al MQTT...");
+if (mqttClient.connect(broker, port)) {
+Serial.println("\nMQTT conectado!");
+mqttClient.subscribe(topic);
+Serial.print("Suscrito al topic: ");
+Serial.println(topic);
+} else {
+Serial.println("Fallo conexion MQTT.");
+while(1);
+}
+}
+void loop() {
+mqttClient.poll();
+int messageSize = mqttClient.parseMessage();
+if (messageSize) {
+String mensaje = "";
+while (mqttClient.available()) {
+mensaje += (char)mqttClient.read();
+}
+Serial.print("He recibido la orden: ");
+Serial.println(mensaje);
+if (mensaje == "PRENDER") {
+digitalWrite(LED_BUILTIN, HIGH);
+Serial.println("Luz encendida! ");
+} else if (mensaje == "APAGAR") {
+digitalWrite(LED_BUILTIN, LOW);
+Serial.println("Luz apagada. ");
+}
+}
+}
+```
