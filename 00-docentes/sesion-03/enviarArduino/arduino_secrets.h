@@ -1,2 +1,2 @@
-#define SECRET_SSID "pixel9"
-#define SECRET_PASS "mateo123"
+#define SECRET_SSID "dis9079"
+#define SECRET_PASS "75288273"

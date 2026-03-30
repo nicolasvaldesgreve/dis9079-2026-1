@@ -187,3 +187,45 @@
 1773689554: Opening ipv4 listen socket on port 1883.
 1773689554: Error: Can't assign requested address
 1773689554: mosquitto version 2.1.2 terminating
+1774296203: mosquitto version 2.1.2 starting
+1774296203: Config loaded from mosquitto.conf.
+1774296203: Bridge support available.
+1774296203: Persistence support available.
+1774296203: TLS support available.
+1774296203: TLS-PSK support available.
+1774296203: Websockets support available.
+1774296203: Warning: File ./passwords.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 ./passwords.txt`.
+
+1774296203: Plugin builtin-security has registered to receive 'basic-auth' events.
+1774296203: Opening ipv4 listen socket on port 1883.
+1774296203: Error: Can't assign requested address
+1774296203: mosquitto version 2.1.2 terminating
+1774296568: mosquitto version 2.1.2 starting
+1774296568: Config loaded from mosquitto.conf.
+1774296568: Bridge support available.
+1774296568: Persistence support available.
+1774296568: TLS support available.
+1774296568: TLS-PSK support available.
+1774296568: Websockets support available.
+1774296568: Warning: File ./passwords.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 ./passwords.txt`.
+
+1774296568: Plugin builtin-security has registered to receive 'basic-auth' events.
+1774296568: Opening ipv4 listen socket on port 1883.
+1774296568: Error: Can't assign requested address
+1774296568: mosquitto version 2.1.2 terminating
+1774297332: mosquitto version 2.1.2 starting
+1774297332: Config loaded from mosquitto.conf.
+1774297332: Bridge support available.
+1774297332: Persistence support available.
+1774297332: TLS support available.
+1774297332: TLS-PSK support available.
+1774297332: Websockets support available.
+1774297332: Warning: File ./passwords.txt has world readable permissions. Future versions will refuse to load this file.
+To fix this, use `chmod 0700 ./passwords.txt`.
+
+1774297332: Plugin builtin-security has registered to receive 'basic-auth' events.
+1774297332: Opening ipv4 listen socket on port 1883.
+1774297332: Error: Can't assign requested address
+1774297332: mosquitto version 2.1.2 terminating

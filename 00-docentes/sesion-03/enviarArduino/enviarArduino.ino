@@ -1,4 +1,4 @@
-// recibirArduino
+// enviarArduino
 // placa se conecta a un servidor mosquitto
 // y envia mensaje a un topic
 // para ser recibido por una placa raspberry pi
@@ -13,69 +13,66 @@
 #include <WiFiS3.h>
 
 const char *grupos[] = {
-    "aaron",
-    "grupo-01",
-    "grupo-02",
-    "grupo-03",
-    "grupo-04",
-    "grupo-05",
-    "grupo-06",
-    "grupo-07",
-    "grupo-08",
-    "grupo-09",
-    "grupo-10",
-    "grupo-11",
-    "mateo",
+  "aaron",
+  "grupo-01",
+  "grupo-02",
+  "grupo-03",
+  "grupo-04",
+  "grupo-05",
+  "grupo-06",
+  "grupo-07",
+  "grupo-08",
+  "grupo-09",
+  "grupo-10",
+  "grupo-11",
+  "mateo",
 };
 
 const char *arduinos[] = {
-    "arduinoAaron",
-    "arduino01",
-    "arduino02",
-    "arduino03",
-    "arduino04",
-    "arduino05",
-    "arduino06",
-    "arduino07",
-    "arduino08",
-    "arduino09",
-    "arduino10",
-    "arduino11",
-    "arduinoMateo",
+  "arduinoAaron",
+  "arduino01",
+  "arduino02",
+  "arduino03",
+  "arduino04",
+  "arduino05",
+  "arduino06",
+  "arduino07",
+  "arduino08",
+  "arduino09",
+  "arduino10",
+  "arduino11",
+  "arduinoMateo",
 };
 
 const char *raspicos[] = {
-    "raspicoAaron",
-    "raspico01",
-    "raspico02",
-    "raspico03",
-    "raspico04",
-    "raspico05",
-    "raspico06",
-    "raspico07",
-    "raspico08",
-    "raspico09",
-    "raspico10",
-    "raspico11",
-    "raspicoMateo",
+  "raspicoAaron",
+  "raspico01",
+  "raspico02",
+  "raspico03",
+  "raspico04",
+  "raspico05",
+  "raspico06",
+  "raspico07",
+  "raspico08",
+  "raspico09",
+  "raspico10",
+  "raspico11",
+  "raspicoMateo",
 };
 
 // cambiar por tu numero de grupo
 // yo soy 0, mateo es 12
-int numeroDeGrupo = 1;
+int numeroDeGrupo = 0;
 
-// importar archivo .h con claves
-#include "arduino_secrets.h"
-
-char ssid[] = SECRET_SSID;
-char pass[] = SECRET_PASS;
+char ssid[] = "dis9079";
+char pass[] = "75288273";
 
 WiFiClient wifiClient;
 MqttClient mqttClient(wifiClient);
 
-const char broker[] = "10.174.124.28";
+const char broker[] = "192.168.0.100";
 int port = 1883;
-const char topic[] = "dis9079/20260323/grupo" + String(numeroDeGrupo);
+const char topic[] = "dis9079/solemne/1/aaron";
 
 // intervalo de tiempo para enviar mensaje
 // medido en ms
@@ -85,15 +82,13 @@ const long intervalo = 10000;
 // el mensaje anterior
 unsigned long momentoAnterior = 0;
 
-int numeritoMensaje = numeroDeGrupo;
+int numeritoMensaje = 0;
 
-void setup()
-{
+void setup() {
   // inicializar el puerto serial
   Serial.begin(9600);
   // si no se ha inicializado, esperar
-  while (!Serial)
-  {
+  while (!Serial) {
     ;
   }
 
@@ -101,8 +96,7 @@ void setup()
   Serial.print("conectandose a red ");
   Serial.println(ssid);
 
-  while (WiFi.begin(ssid, pass) != WL_CONNECTED)
-  {
+  while (WiFi.begin(ssid, pass) != WL_CONNECTED) {
     // si falla, reintentar
     Serial.print(".");
     delay(5000);
@@ -113,29 +107,27 @@ void setup()
   // ID del cliente
   // cada cliente debe tener una ID unica
   // este cliente es la placa arduino
-  mqttClient.setId(arduinos[numeroDeGrupo]);
+  mqttClient.setId("arduinoAaron");
 
   // autenticacion con username y clave
-  mqttClient.setUsernamePassword(arduinos[numeroDeGrupo], "dis9079");
+  Serial.println("arduinoAaron");
+  mqttClient.setUsernamePassword("arduinoAaron", "dis9079");
 
   Serial.print("tratando de conectarse al MQTT broker ");
   Serial.println(broker);
 
-  if (!mqttClient.connect(broker, port))
-  {
+  if (!mqttClient.connect(broker, port)) {
     Serial.print("conexion a MQTT fallida! codigo del error = ");
     Serial.println(mqttClient.connectError());
 
-    while (1)
-      ;
+    delay(2000);
   }
 
   Serial.println("te conectaste al MQTT broker!");
   Serial.println();
 }
 
-void loop()
-{
+void loop() {
   // call poll() regularly to allow the library to send MQTT keep alives which
   // avoids being disconnected by the broker
   mqttClient.poll();
@@ -144,10 +136,9 @@ void loop()
   // see: File -> Examples -> 02.Digital -> BlinkWithoutDelay for more info
   unsigned long currentMillis = millis();
 
-  if (currentMillis - previousMillis >= intervalo)
-  {
+  if (currentMillis - momentoAnterior >= intervalo) {
     // save the last time a message was sent
-    previousMillis = currentMillis;
+    momentoAnterior = currentMillis;
 
     Serial.print("enviando mensaje al topic:");
     Serial.println(topic);
@@ -163,5 +154,12 @@ void loop()
     mqttClient.endMessage();
 
     Serial.println();
+
+    // toggle numerito
+    if (numeritoMensaje == 0) {
+      numeritoMensaje = 1;
+    } else {
+      numeritoMensaje = 0;
+    }
   }
 }

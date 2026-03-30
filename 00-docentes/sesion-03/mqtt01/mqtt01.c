@@ -8,15 +8,16 @@
 #include <string.h>
 #include "pico/stdlib.h"
 #include "pico/cyw43_arch.h"
+
 #include "lwip/apps/mqtt.h"
 #include "lwip/ip_addr.h"
 
 // configuracion wifi
-#define WIFI_SSID "pixel9"
-#define WIFI_PASSWORD "mateo123"
+#define WIFI_SSID "dis9079"
+#define WIFI_PASSWORD "75288273"
 
 // configuracion mqtt
-#define MQTT_BROKER "10.174.124.28"
+#define MQTT_BROKER "192.168.0.100"
 #define MQTT_PORT 1883
 
 
@@ -70,9 +71,11 @@ const char *raspicos[] = {
 
 // cambiar por tu numero de grupo
 // yo soy 0, mateo es 12
-int numeroDeGrupo = 1;
+int numeroDeGrupo = 0;
 
-string mqttTopic = "dis9079/20260323/grupo" + String(numeroDeGrupo);
+// string mqttTopic = "dis9079/20260323/grupo" + String(numeroDeGrupo);
+const char *mqttTopic mqttTopic = "dis9079/solemne/1/aaron";
+
 
 // declarar instancia de cliente mqtt
 mqtt_client_t *cliente;
@@ -118,9 +121,9 @@ static void mqtt_connection_cb(mqtt_client_t *client, void *arg, mqtt_connection
 
         // subscribe to topic
         mqtt_set_inpub_callback(client, mqtt_incoming_publish_cb, mqtt_incoming_data_cb, NULL);
-        mqtt_subscribe(client, mqttTopic.c_str(), 0, NULL, NULL);
+        mqtt_subscribe(client, mqttTopic, 0, NULL, NULL);
 
-        printf("Suscrito a: %s\n", mqttTopic.c_str());
+        printf("Suscrito a: %s\n", mqttTopic);
     }
     else
     {
@@ -157,7 +160,7 @@ void conectar_wifi()
 
 void conectar_mqtt()
 {
-    client = mqtt_client_new();
+    cliente = mqtt_client_new();
 
     ip_addr_t broker_ip;
     ipaddr_aton(MQTT_BROKER, &broker_ip);
@@ -190,6 +193,7 @@ int main()
 while (true)
     {
         // nothing here: everything happens via callbacks
+        cyw43_arch_poll();
         sleep_ms(1000);
     }
 }

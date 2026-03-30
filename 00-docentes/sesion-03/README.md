@@ -176,3 +176,4 @@ esta solemne será difícil y se valorará el orden, el esfuerzo, el intento.
 para la solemne 02
 
 cada persona tendrá una nota, que tendrá una mitad grupal y la otra mitad individual.
+

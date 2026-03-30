@@ -25,6 +25,10 @@ endif()
 # ====================================================================================
 set(PICO_BOARD pico2_w CACHE STRING "Board type")
 
+set(PICO_LWIP 1)
+set(PICO_LWIP_APPS 1)
+set(PICO_CYW43_ARCH_POLL 1)
+
 # Pull in Raspberry Pi Pico SDK (must be before project)
 include(pico_sdk_import.cmake)
 
@@ -47,7 +51,7 @@ pico_enable_stdio_usb(mqtt01 1)
 # Add the standard library to the build
 target_link_libraries(mqtt01
         pico_stdlib
-        pico_cyw43_arch_lwip_threadsafe_background
+        pico_cyw43_arch_lwip_poll
 )
 
 # Add the standard include files to the build
@@ -55,10 +59,6 @@ target_include_directories(mqtt01 PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
 )
 
-# Add any user requested libraries
-target_link_libraries(mqtt01 
-        pico_cyw43_arch_none
-        )
 
 pico_add_extra_outputs(mqtt01)
 
