@@ -28,4 +28,6 @@ Cuando dice return-1, significa que perdí, me rendí. Para que el código pare,
 
 ---
 
-Encargo: ver el primer capitulo de monty python
+### Encargo: ver el primer capitulo de Monty Python
+
+La verdad antes no tenía idea de que existía Monty Python's Flying Circus, pero ahora que vi el primer capítulo puedo decir que es muy entretenido, ya que en lo personal me gustan bastante los chistes sin sentido o que no se sabe qué es lo que viene o qué es lo que está sucediendo realmente (creo que me gustan las situaciones ridículas), y de todo el capítulo puedo decir que mis escenas favoritas eran en donde hacían los chistes de los cerditos ya que en ninguno supe predecir que eso iba a suceder hasta que mostraban la pizarra tachando un cerdito más.
