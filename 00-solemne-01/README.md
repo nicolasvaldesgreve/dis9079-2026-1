@@ -1,9 +1,21 @@
 # solemne-01
 
+la solemne-01 ha sido accidentada debido a chascarros computacionales del profesore aarón montoya.
+
+las primeras mitades de clase han sido teóricas e históricas sobre computación con un enfoque en microcontroladores y protocolos inalámbricos, y las demostraciones con el protocolo MQTT han tenido muchos problemas de puertos y permisos, lo siento!
+
+como parte de mi labor estaré reparando este primer mes accidentado, para que cuando lleguemos a la solemne-02 y al examen esto sea solamente un recuerdo de lo difícil que es hacer una comunicación inalámbrica, y que nos permita apreciar lo aprendido durante el semestre.
+
 ## equipos
 
-- grupo-01
+como curso dividimos 32 estudiantes en 11 grupos.
+
+- grupo-01:
+  - Monserrat-Paredes
+  - sofiacartes
+  - vxlentiinaa
 - grupo-02
+  - jesumirandaa
 - grupo-03
 - grupo-04
 - grupo-05
@@ -13,6 +25,37 @@
 - grupo-09
 - grupo-10
 - grupo-11
+
+
+agustinaaceituno	10
+antokiaraa	3
+AlegriaColoma	4
+benjaminalvarez21	11
+josefa-kristina	7
+arevalourra	6
+magdalenabalart	2
+tomascatri	3
+felipecaurapan	5
+Anaysval	11
+brauliofigueroa2001	
+AntFuentealba	10
+Guilleibanez	
+antolavalle	4
+ccarlabelenn	2
+Camila-Parada	5
+
+paredesvania	5
+isipm08	6
+	
+	1
+angel-udp	3
+catasal	4
+marlensoto-lab	
+DebSkar	7
+Luisaatoro9	
+nicolasvaldesgreve	6
+cristobalvergarasilva	7
+marcezm	
 
 ## instrucciones
 
@@ -40,30 +83,3 @@ grupal:
   - 0.5 puntos: el sistema solamente envía o recibe mensajes
   - 0.3 puntos: intentos de enviar o recibir mensajes, aunque no funcionen
   - 0.0 puntos: los intentos no se entienden, no tienen comentarios, están desordenados
-
-## descuentos
-
-- 4 puntos menos por no presentar
-- 2 puntos menos por presentar sin explicación
-- 3 puntos menos por no usar referencias a tutoriales
-
-## horarios
-
-el día de la solemne los 11 grupos se presentarán en el siguiente orden:
-
-- 02:30pm - 02:40pm: grupo-01
-- 02:40pm - 02:50pm: grupo-02
-- 02:50pm - 03:00pm: grupo-03
-- 03:00pm - 03:10pm: grupo-04
-- 03:10pm - 03:20pm: comentarios
-- 03:20pm - 03:30pm: grupo-05
-- 03:30pm - 03:40pm: grupo-06
-- 03:40pm - 03:50pm: grupo-07
-- 03:50pm - 04:00pm: comentarios
-- 04:00pm - 04:20pm: pausa
-- 04:20pm - 04:30pm: grupo-08
-- 04:30pm - 04:40pm: grupo-09
-- 04:40pm - 04:50pm: grupo-10
-- 04:50pm - 05:00pm: grupo-11
-- 05:00pm - 05:10pm: comentarios
-- 05:10pm - 05:20pm: ordenar
