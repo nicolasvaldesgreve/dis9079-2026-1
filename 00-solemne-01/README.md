@@ -39,7 +39,12 @@ como curso dividimos 32 estudiantes en 11 grupos.
   - DebSkar
   - cristobalvergarasilva
 - grupo-08
+  - brauliofigueroa2001
+  - Luisaatoro9
 - grupo-09
+  - Guilleibanez
+  - marlensoto-lab
+  - marcezm
 - grupo-10
   - agustinaaceituno
   - TODO: ignacio campos
@@ -47,12 +52,6 @@ como curso dividimos 32 estudiantes en 11 grupos.
 - grupo-11
   - benjaminalvarez21
   - Anaysval
-
-brauliofigueroa2001
-Guilleibanez
-marlensoto-lab
-Luisaatoro9
-marcezm
 
 ## instrucciones
 

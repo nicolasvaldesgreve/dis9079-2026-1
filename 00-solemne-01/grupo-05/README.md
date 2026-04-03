@@ -18,33 +18,5 @@ elemento adicional: usaron un botón, hicieron algún texto, hicieron algún led
 
 | Componentes | Tipo | Qty | Valor/tipo | Precio | Link |
 |-------------|------|-----|------------|--------|------|
-| Arduino UNO R4 WiFi | Tarjetas de Desarrollo | 1 | 5 V | $38.990 | https://mcielectronics.cl/shop/product/arduino-uno-r4-minima |
-| Raspberry Pi 2 W | Tarjetas de Desarrollo | 1 | 1,8–5,5 V | $14.990 | https://mcielectronics.cl/shop/product/74358/ |
-
-## conexiones eléctricas
-
-texto e imágenes
-
-## diagrama de flujo
-
-hacer con mermaid, subir código
-
-## aprendizajes
-
-tres párrafos
-
-## dificultades
-
-tres párrafos
-
-## conclusiones
-
-tres párrafos
-
-## referencias
-
-lista de enlaces, libros, clases, tutoriales, etc
-
-* uno
-* dos
-* etc
+| Arduino UNO R4 WiFi | Tarjetas de Desarrollo | 1 | 5 V | $38.990 | <https://mcielectronics.cl/shop/product/arduino-uno-r4-minima> |
+| Raspberry Pi 2 W | Tarjetas de Desarrollo | 1 | 1,8–5,5 V | $14.990 | <https://mcielectronics.cl/shop/product/74358/> |
