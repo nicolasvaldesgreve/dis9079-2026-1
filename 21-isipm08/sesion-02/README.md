@@ -20,6 +20,8 @@ Administrador de biblioteca -> ArduinoGraphics (v1.1.4 o más reciente)
   3. lenguaje programación, dialecto lenguaje C++
   4. ARDUINO UNO R4 WIFI (https://mcielectronics.cl/?gad_source=1&gad_campaignid=16507251800&gbraid=0AAAAADijL1UYOR1koEBKBpRKIOg-CeDiq&gclid=CjwKCAjw1N7NBhAoEiwAcPchp0w09yulbqEJV8xQ7ByCv8icxEtKEJxPwMpPVmEqlf8Iy-gh45KBPBoCOKMQAvD_BwE)
   5. arduino boards manager r4, mqtt https://www.arduino.cc/en/software/#ide
+     
+     ![titulo](./imagenes/arduinor4.jpg) 
 
 void setup ()  {
 }
