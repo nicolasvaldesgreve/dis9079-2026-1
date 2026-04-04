@@ -88,7 +88,7 @@ aquí van tutoriales técnicos sobre cómo usar Adafruit IO para la solemne-01, 
 
 usaremos Adafruit IO para enviar información entre dos placas distintas conectadas a dos computadores distintos, vía Adafruit IO.
 
-- tutorial de Adafruit IO: <https://learn.adafruit.com/adafruit-io-basics-feather-m0-wifi/overview>
+- tutorial de Adafruit IO: <https://learn.adafruit.com/series/adafruit-io-basics>
 
 ### sobre instalación en tu computadora
 
