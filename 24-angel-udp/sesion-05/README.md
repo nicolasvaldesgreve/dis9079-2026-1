@@ -24,3 +24,13 @@ Guarda el historial de datos, pueden descargarse y también compartirse.
 
 Siguiendo los pasos dados en la carpeta Solemne-01
 
+Arduino IDE ya estaba instalado previamente en mi computadora por las clases anteriores asi que pase directamente con la instalación de Adafruit IO para Arduino
+
+![ladofrontal](./imagenes/instalacion1.png)
+
+Y luego se terminaron de instalar todas las bibliotecas que nesecitaba
+
+![ladofrontal](./imagenes/instalacion2.png)
+
+Luego procedí a crearme una cuenta en Adafruit con el correo institucional y quedamos listos para apuntar, luego hacer el trabajo grupal con nuestro Arduino y Raspberry Pi
+
