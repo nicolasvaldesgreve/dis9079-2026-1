@@ -166,6 +166,23 @@ Para usuarios que utilizan la plataforma de configuración sin código, la gesti
 
 *información sacada de: <https://learn.adafruit.com/adafruit-io-basics-dashboards>*
 
+#### Dashboards
+
+Los paneles de control son la interfaz visual de Adafruit IO que permite visualizar datos y controlar dispositivos en tiempo real.
+
+´Proceso de Creación´
+
+Pasos a seguir:
+
+1.  **Acceso:** Inicie sesión en [io.adafruit.com](https://io.adafruit.com) y seleccione el enlace "Dashboards" en el encabezado principal.
+2.  **Inicialización:** En la lista de paneles, haga clic en el botón "New Dashboard".
+3.  **Configuración:** Introduzca un nombre y una descripción para el panel. Finalice el proceso haciendo clic en el botón "Create".
+4.  **Visualización:** Seleccione el nombre del panel recién creado para acceder a la interfaz de edición.
+
+*Al crear un panel por primera vez, este se presentará en blanco. Los bloques de visualización y control deben añadirse manualmente vinculándolos a los feeds correspondientes creados previamente.*
+
+Así se ve como pagina principal
+
 ![instalaciónAdaIO](./imagenes/instalaciónAdaIO.jpg)
 
 **Prueba en clases**
