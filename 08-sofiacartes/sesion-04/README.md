@@ -21,7 +21,7 @@ port (puerto) 1883 es el estandar que ocurre mqtt
 - el broker siempre vive en el raspberry pi -> MQTT
 - arduino 01 -> clave encriptada -> dis0979
 - 52 > arduino01
-- Model OSI > capas de comunicación
+- Model OSI -> capas de comunicación
 - sobre wifi se usa la estrategia mqtt
 - UDP `User Datagram Protocol`: Mensajes entre canales. Es un protocolo de transporte rápido y sin conexión, ideal para streaming, juegos en línea y VoIP. Envía paquetes (datagramas) directamente sin establecer sesión ni verificar recepción, priorizando la velocidad y baja latencia sobre la fiabilidad. Se usa cuando la rapidez es crítica. [UDP](https://en.wikipedia.org/wiki/User_Datagram_Protocol)
 - sudo: Super usuario hacer (no usar) peligroso.
