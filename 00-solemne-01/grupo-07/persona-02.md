@@ -6,4 +6,6 @@ investigaciones individuales
 
 
 
-## sobre artista, diseñadora o producto que usa electrónica o computación inalámbricas
+### sobre artista, diseñadora o producto que usa electrónica o computación inalámbricas
+
+## Sara Ludy
