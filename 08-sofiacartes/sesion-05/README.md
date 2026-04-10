@@ -181,6 +181,8 @@ Pasos a seguir:
 
 *Al crear un panel por primera vez, este se presentará en blanco. Los bloques de visualización y control deben añadirse manualmente vinculándolos a los feeds correspondientes creados previamente.*
 
+*información sacada de: <https://learn.adafruit.com/adafruit-io-basics-dashboards>*
+
 Así se ve como pagina principal
 
 ![instalaciónAdaIO](./imagenes/instalaciónAdaIO.jpg)
