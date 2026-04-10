@@ -207,6 +207,8 @@ void loop()
 }
 ```
 
+<img src="./imagenes/final.gif" alt="final" width="300">
+
 ### código para enviar
 
 Lo primero que hicimos fue conectar la pantalla Oled SS1306 al Arduino y subir algún código para ver si funcionaba de mandera correcta.
