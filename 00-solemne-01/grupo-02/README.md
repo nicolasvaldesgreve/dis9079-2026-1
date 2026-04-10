@@ -110,3 +110,15 @@ rellenar en el mismo orden que los integrantes del grupo
 [persona-03.md](./persona-03.md)
 
 ## bibliografía
+
+**Arduino. UNO R4 WiFi Cheat Sheet / User Manual.** https://docs.arduino.cc/tutorials/uno-r4-wifi/cheat-sheet/?utm_source=chatgpt.com   
+**Adafruit. Adafruit IO Basics: Feeds.** https://learn.adafruit.com/adafruit-io-basics-feeds?view=all&utm_source=chatgpt.com   
+**Adafruit GitHub. Adafruit_SSD1306.** https://github.com/adafruit/adafruit_ssd1306?utm_source=chatgpt.com   
+**Adafruit. Animated Flying Toaster OLED Jewelry – Code.** https://learn.adafruit.com/animated-flying-toaster-oled-jewelry/code?utm_source=chatgpt.com     
+**Arduino: Pantalla Oled de 0.96"** Mostrar Datos Analógicos https://www.youtube.com/watch?v=GjI0_4ed4JE   
+**Arduino oled mostrar datos.txt**  https://drive.google.com/file/d/1JUANNHpeVcxEBgpdv9FMDBNIgAdSIzLL/view   
+**Sensor pulso cardiaco y arduino** https://m.youtube.com/watch?v=Pu6Ks_O12S8    
+**Arduino Documentation. Using Variables in Sketches.** https://docs.arduino.cc/learn/programming/variables/?utm_source=chatgpt.com   
+**Microsoft Learn. Declarations and definitions (C++).** https://learn.microsoft.com/en-us/cpp/cpp/declarations-and-definitions-cpp?view=msvc-170&utm_source=chatgpt.com   
+**Variables en Arduino: Qué Son y Cómo Usarlas Correctamente.** youtube.com/watch?v=GajOQXb1lYw&utm_source=chatgpt.com    
+**Arduino Tutorial 4: Understanding Arduino Variables.** https://www.youtube.com/watch?v=nPOKOi1jIK0   
