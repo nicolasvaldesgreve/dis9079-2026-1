@@ -49,3 +49,5 @@ Y finalmente resultó, el código funcionó y logramos prender y apagar el led d
 [persona-02.md](./persona-02.md) Benjamín Álvarez
 
 ## bibliografía
+
+https://learn.adafruit.com/series/adafruit-io-basics
