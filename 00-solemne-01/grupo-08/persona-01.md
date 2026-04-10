@@ -94,6 +94,30 @@ Código con adafruit IO
 ![adafruit2](./imagenes/servidorAdafruitbraulio.JPG)
 
 - Aquí vemos en detalle los datos que nos está enviando arduino, estos pueden aparecer por un largo periodo de tiempo, en este caso lo dejé toda la hora de almuerzo enviando datos y cuando volví, el proceso había llegado aprox hasta el dato 2600. Después de eso se detuvo, las cosas se crashean
+
+- En clases lunes 6: anotar todos los errores y aciertos, cada paso específico que hicimos, prendimos el botón no se cuántas veces? reiniciamos, desconectamos, cerramos arduino, desconectamos la placa
+
+**avance lid 8 de abril**
+
+- Junto con Luisa pensábamos en las siguientes opciones:
+
+- Ver si se puede enviar un mensaje de monitor serial desde un arduino a otro en distinto computador, después, el que recibió ese mensaje lo envía a adafruit IO
+
+- Opción 2, prender un led desde un arduino al led de otro arduino en computadores distintos, cada vez que reciba un número el led parpadea
+
+- Opción 3 enviar números desde un arduino hacia la otra pantalla del otro arduino, que se dibujen los números cada vez que lo reciba, un contador
+
+- Para enviar y recibir en distintos arduinos, ambos deberían estar utilizando las mismas credenciales, no sé si es necesario que estén en el mismo wifi
+
+- Dashboard es como la forma en la que eliges el cómo manejar el dato, feed es a dónde llegan esos datos, algo así le entendí a Vania cuando me explicó
+
+- Descargar el archivo de recibir desde la página de adafruit, vania me ayudó, tengo dudas sobre cómo encontrar el config.h que debiera venir
+
+- Vania puso el mismo config.h que mandó aarón, al final incluye los seteos para el wifi y usuarios, más que nada es para eso
+
+- Al final el archivo config.h sí estaba en la librería de adafruit en github, tenía unos ajustes pequeños entonces se descargó ese para ponerlo en la carpeta del archivo recibir
+
+- Comunicar entre arduinos, uno envía, el otro recibe, el mensaje se traduce y se transforma en algo, cómo???
    
 ## sobre artista, diseñadora o producto que usa electrónica o computación inalámbricas
 
