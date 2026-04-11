@@ -36,6 +36,12 @@ en esta instalación se distribuyen en el espacio imágenes personales de la vid
 
 En la mayoría de sus obras Sara fusiona el uso de el software y el hardware para crear imágenes y animaciones,para simular fenómenos físicos, está artista logra transformar lo que se considera como inerte y frío en algo de aspecto orgánico, los componentes eléctricos pasan a ser parte de sus obras y no solo un medio para realizarlas.
 
+## Fuentes:
+
+https://www.saraludy.com/clouds
+https://bitforms.art/artwork/cloud-relief-2
+https://www.niio.com/blog/dreams-and-virtual-reality-are-ideal-collaborators-an-interview-with-artist-sara-ludy-by-celine-katzman/
+https://officeimpart.com/sara-ludy
 
 
 
