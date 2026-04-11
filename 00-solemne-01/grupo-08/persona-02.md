@@ -42,7 +42,7 @@ Paso 2: Después de las cuentas de Adafruit, me pasé al Arduino IDE. Yo ya lo t
 2. Las dependencias: Cuando le di a "Install", me saltó un aviso gigante preguntando si quería instalar un montón de cosas más. Al principio me dio susto, pero entendí que son como los "ayudantes" de la librería principal (como HttpClient y Adafruit_MQTT). Sin ellos, el código simplemente no compila porque le faltarían piezas clave.
 3. Logro: Una vez que terminó la descarga, mi IDE ya estaba listo para escribir código que se conectara a la nube.
 
-<table style="width: 100%; border: none;"> <tr> <td style="width: 50%; border: none; text-align: center;"> <img src="https://github.com/user-attachments/assets/5a4465ad-acee-497f-9a16-1e36107cf345" width="100%" alt="Instalación de Librerías 01"> <p><i><b>Evidencia 05:</b> Buscando la librería <b>Adafruit IO Arduino</b> en el Library Manager.</i></p> </td> <td style="width: 50%; border: none; text-align: center;"> <img src="https://github.com/user-attachments/assets/8a412aa3-3d25-41ac-8fec-88104af41b5c" width="100%" alt="Instalación de Librerías 02"> <p><i><b>Evidencia 06:</b> Proceso de instalación de dependencias. Se instalaron todos los "ayudantes" necesarios para la comunicación WiFi.</i></p> </td> </tr> </table>
+<table style="width: 100%; border: none;"> <tr> <td style="width: 50%; border: none; text-align: center;"> <img src="https://github.com/user-attachments/assets/5a4465ad-acee-497f-9a16-1e36107cf345" width="115%" alt="Instalación de Librerías 01"> <p><i><b>Evidencia 05:</b> Buscando la librería <b>Adafruit IO Arduino</b> en el Library Manager.</i></p> </td> <td style="width: 50%; border: none; text-align: center;"> <img src="https://github.com/user-attachments/assets/8a412aa3-3d25-41ac-8fec-88104af41b5c" width="115%" alt="Instalación de Librerías 02"> <p><i><b>Evidencia 06:</b> Proceso de instalación de dependencias. Se instalaron todos los "ayudantes" necesarios para la comunicación WiFi.</i></p> </td> </tr> </table>
 
 Hallazgos Técnicos Clave:
 
@@ -56,7 +56,7 @@ Bonus :)
 * **Integración con Webhooks y Dashboards:** Investigué que Adafruit IO no solo recibe datos, sino que permite crear Dashboards visuales en tiempo real sin escribir código extra. Además, tiene integración con Webhooks, lo que permitiría enviar una alerta a mi celular o un correo si mi sensor detecta algo crítico, expandiendo la interacción fuera de la placa.
 * **Limitaciones del Plan Free (Rate Limiting):** Es importante notar que el plan gratuito tiene un límite de 30 datos por minuto y almacenamiento de datos por 30 días. Para nuestro proyecto esto es suficiente, pero entender estas limitaciones es vital para no "spamear" el broker y evitar que la cuenta sea bloqueada por exceso de tráfico.
 
-🗓️ Bitácora del Lunes: Mis Primeros Pasos en el IoT
+Bitácora del Lunes: Mis Primeros Pasos en el IoT
 
 El lunes fue nuestro "bautismo de fuego". Hicimos dos ejercicios clave que me sirvieron para entender que en el IoT, si una pieza pequeña falla, nada funciona.
 Ejercicio 1: El "Hola Mundo" en la Nube
@@ -66,7 +66,7 @@ El objetivo era conectar el Arduino R4 WiFi a Adafruit IO por primera vez.
 1. Mi experiencia: Al principio fue un enredo con las credenciales. Aprendí que el código es súper sensible: una mayúscula mal puesta en el nombre del WiFi y ya no conectaba.
 2. Lo que descubrí: Aquí fue cuando caché lo de los Puertos COM. Al conectar mi placa, vi que aparecía como COM14. Entendí que ese es el "asiento" que ocupa mi Arduino en el PC. También noté que si el código decía 115200 baudios y el monitor estaba en 9600, solo veía símbolos raros (rombos). Sincronizarlos fue la clave para ver el mensaje de "conectado.
 
-# Ejercicio 2: El Drama del LED y el Dashboard
+## Ejercicio 2 Resumen: El Drama del LED y el Dashboard
 
 Aquí la meta era pro pro: prender un LED físico con un botón digital desde Adafruit.
 
@@ -81,7 +81,12 @@ Durante estos dos ejercicios, me fijé en detalles del Arduino IDE que ahora me 
 * **Estructura:** Aprendí que el #include tiene que ir arriba sí o sí. Es como presentar a los invitados antes de empezar la fiesta.
 * **Redes:** Me voló la cabeza entender que no todos los WiFi sirven; tuve que configurar el Hotspot en 2.4 GHz porque mi Arduino no "ve" la frecuencia de 5 GHz que suelen usar los celulares modernos.
 
-## Experimento Final - Grupal - Resumen: Comunicación entre Nodos (Emisor y Receptor)
+Evidencia:
+
+<table style="width: 100%; border: none;"> <tr> <td style="border: none; text-align: center; vertical-align: top;"> <img src="https://github.com/user-attachments/assets/3c1dc746-db01-4707-9176-1ccf272acb70" width="400" alt="Circuito LED"> <p><small><i><b>Imagen 07:</b> Setup inicial protoboard.</i></small></p> </td> <td style="border: none; text-align: center; vertical-align: top;"> <img src="https://github.com/user-attachments/assets/5e48be00-1fdf-4d84-93b0-64ed8c9add9f" width="300" alt="Dashboard Adafruit"> <p><small><i><b>Imagen 08:</b> Botón en Adafruit IO.</i></small></p> </td> <td style="border: none; text-align: center; vertical-align: top;"> <img src="https://github.com/user-attachments/assets/97e0f2c7-5540-40fd-9f60-5cc595c7be07" width="400" alt="Uso multímetro"> <p><small><i><b>Imagen 09:</b> Diagnóstico con multímetro.</i></small></p> </td> </tr> </table>
+
+## Experimento Grupal - Resumen: Comunicación entre Nodos (Emisor y Receptor)
+
 
 Después de los ejercicios del lunes, el miércoles nos tiramos a la piscina con un desafío mucho más pro: la comunicación bidireccional entre dos Arduinos R4 WiFi usando la matriz de LEDs de 12x8.
 El Objetivo del Experimento
@@ -103,7 +108,7 @@ Mis Observaciones Técnicas (Lo que aprendí en el proceso):
     Que las credenciales (AIO Key y Username) en el código sean las correctas para entrar al mismo "buzón" en la nube.
 
 Resultados:
-<div align="center"> <video src="https://github.com/user-attachments/assets/20e565f9-6a12-4114-818b-a9c23fc3dd31" width="600" controls> Tu navegador no soporta el elemento de video. </video> <p><i><b>Evidencia Final:</b> Handshake exitoso entre nodos. El Arduino receptor dibuja el número enviado desde la nube en tiempo real.</i></p> </div>
+<div align="center"> <video src="https://github.com/user-attachments/assets/20e565f9-6a12-4114-818b-a9c23fc3dd31" width="600" controls> Tu navegador no soporta el elemento de video. </video> <p><i><b>Evidencia Final:</b> Handshake exitoso entre nodos. El Arduino receptor emite un flash debido al número enviado desde la nube en tiempo real.</i></p> </div>
 
 ## Mi Profundización Personal: El "Efecto Flash" ⚡
 
